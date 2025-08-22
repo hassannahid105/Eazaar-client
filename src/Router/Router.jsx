@@ -13,6 +13,7 @@ import Test from "../Test/Test";
 import Products from "../pages/Dashboard/Products/Products";
 import UpdateProduct from "../pages/Dashboard/UpdateProduct/UpdateProduct";
 import Shop from "../pages/Shop/Shop";
+import AddToCart from "../pages/AddToCart/AddToCart";
 
 const router = createBrowserRouter([
   {
@@ -33,11 +34,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: (
-          <PrivateRoute>
-            <ProductsDetails></ProductsDetails>
-          </PrivateRoute>
-        ),
+        element: <ProductsDetails></ProductsDetails>,
+      },
+      {
+        path: "/addtocart",
+        element: <AddToCart></AddToCart>,
       },
       {
         path: "/register",

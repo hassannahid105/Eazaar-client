@@ -4,10 +4,14 @@ import image from "../../../assets/Home/slider/banner-campaign-51-1-1.png";
 import { useParams } from "react-router";
 // import { useEffect, useState } from "react";
 import useProduct from "../../../hooks/useProduct";
+import axios from "axios";
+import Swal from "sweetalert2";
+import useCarts from "../../../hooks/useCarts";
 
 const ProductInfoSection = () => {
   const { id } = useParams();
   const { product } = useProduct(id);
+  const { refetch } = useCarts();
   const {
     name,
     description,
@@ -26,6 +30,23 @@ const ProductInfoSection = () => {
     images,
   } = product;
   console.log(product);
+  const handleAddToCart = async () => {
+    const cartInfo = {
+      name: "myname",
+    };
+    const cartRes = await axios.post("http://localhost:5000/carts", cartInfo);
+    console.log(cartRes.data.acknowledged);
+    if (cartRes.data.acknowledged) {
+      refetch();
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: `${name} has been added to your cart! ✅`,
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  };
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center ">
       <div>
@@ -85,7 +106,10 @@ const ProductInfoSection = () => {
           </span>
         </p>
         <p className="text-secondary mb-2 font-bold ">Available: {stock}</p>
-        <button className="btn bg-main text-white px-12 text-xl">
+        <button
+          onClick={handleAddToCart}
+          className="btn bg-main text-white px-12 text-xl"
+        >
           Add to Cart
         </button>
       </div>

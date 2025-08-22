@@ -61,10 +61,7 @@ const Home = () => {
       <EasyLife></EasyLife>
       {/*  */}
       <FeatureProduct></FeatureProduct>
-<<<<<<< HEAD
-=======
       <p></p>
->>>>>>> 817e5d2 (first commit)
     </div>
   );
 };
