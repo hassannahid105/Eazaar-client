@@ -1,0 +1,1078 @@
+[
+  {
+    "name": "Goldenhour Watch",
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#000000",
+    "description": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "dimensions": {
+      "weight": "455",
+      "height": "33",
+      "width": "564",
+      "depth": "56"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Smart wearable with modern design and advanced health features.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "10000",
+    "price": "12000",
+    "stock": "100",
+    "tags": ["bestseller"]
+  },
+  {
+    "name": "SportX Fitness Tracker",
+    "brand": "Samsung",
+    "categories": null,
+    "category": "Wearable Technology",
+    "color": "#FF5733",
+    "description": "Modern design with smart features for fitness tracking.",
+    "dimensions": {
+      "weight": "300",
+      "height": "45",
+      "width": "210",
+      "depth": "22"
+    },
+    "discountType": "Flash Sale",
+    "featureDes": "Advanced tracking with multiple health features.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "7500",
+    "price": "9999",
+    "stock": "250",
+    "tags": ["fitness", "smart"]
+  },
+  {
+    "name": "PulseX Pro",
+    "brand": "Apple",
+    "categories": null,
+    "category": "Smart Wearables",
+    "color": "#1ABC9C",
+    "description": "Track your fitness and daily activities seamlessly.",
+    "dimensions": {
+      "weight": "250",
+      "height": "40",
+      "width": "200",
+      "depth": "20"
+    },
+    "discountType": "Summer Deal",
+    "featureDes": "Water resistant, heart rate monitoring, GPS enabled.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "15000",
+    "price": "18000",
+    "stock": "150",
+    "tags": ["health", "premium"]
+  },
+  {
+    "name": "FitLife Smart Band",
+    "brand": "Xiaomi",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#34495E",
+    "description": "Compact, stylish, and perfect for workouts.",
+    "dimensions": {
+      "weight": "220",
+      "height": "38",
+      "width": "180",
+      "depth": "18"
+    },
+    "discountType": "Festival Discount",
+    "featureDes": "Sleep tracker, step counter, notification alerts.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "4999",
+    "price": "6999",
+    "stock": "500",
+    "tags": ["budget", "popular"]
+  },
+  {
+    "name": "Cardio Max Watch",
+    "brand": "Garmin",
+    "categories": null,
+    "category": "Sports Accessories",
+    "color": "#2ECC71",
+    "description": "Perfect for runners and athletes.",
+    "dimensions": {
+      "weight": "280",
+      "height": "42",
+      "width": "190",
+      "depth": "20"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "GPS, cardio tracking, and professional performance tools.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "22000",
+    "price": "25000",
+    "stock": "120",
+    "tags": ["athlete", "sports"]
+  },
+  {
+    "name": "Zenith Active",
+    "brand": "Huawei",
+    "categories": null,
+    "category": "Wearable Technology",
+    "color": "#9B59B6",
+    "description": "Stay connected with advanced activity tracking.",
+    "dimensions": {
+      "weight": "240",
+      "height": "39",
+      "width": "185",
+      "depth": "19"
+    },
+    "discountType": "Holiday Special",
+    "featureDes": "Call, message alerts, and step counter.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "8200",
+    "price": "10500",
+    "stock": "300",
+    "tags": ["smart", "connected"]
+  },
+  {
+    "name": "AeroFit Band",
+    "brand": "Oppo",
+    "categories": null,
+    "category": "Exercise Equipment",
+    "color": "#F39C12",
+    "description": "Lightweight and durable fitness band.",
+    "dimensions": {
+      "weight": "210",
+      "height": "37",
+      "width": "175",
+      "depth": "17"
+    },
+    "discountType": "Weekly Deal",
+    "featureDes": "Tracks sleep, steps, calories burned.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "4500",
+    "price": "6500",
+    "stock": "400",
+    "tags": ["budget", "fitness"]
+  },
+  {
+    "name": "NeoPulse Watch",
+    "brand": "OnePlus",
+    "categories": null,
+    "category": "Smart Devices",
+    "color": "#E74C3C",
+    "description": "Smart fitness tracking with elegant design.",
+    "dimensions": {
+      "weight": "270",
+      "height": "41",
+      "width": "195",
+      "depth": "21"
+    },
+    "discountType": "New Launch Offer",
+    "featureDes": "SpO2 monitoring, activity reminders.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "11000",
+    "price": "14000",
+    "stock": "200",
+    "tags": ["premium", "trending"]
+  },
+  {
+    "name": "VitalCore Band",
+    "brand": "Fitbit",
+    "categories": null,
+    "category": "Fitness Gadgets",
+    "color": "#2980B9",
+    "description": "Monitor your health with style.",
+    "dimensions": {
+      "weight": "260",
+      "height": "39",
+      "width": "182",
+      "depth": "20"
+    },
+    "discountType": "Mega Offer",
+    "featureDes": "Heart rate, calories, sleep monitoring.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "8800",
+    "price": "12000",
+    "stock": "180",
+    "tags": ["fitness", "value"]
+  },
+  {
+    "name": "MovePro Tracker",
+    "brand": "Realme",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#27AE60",
+    "description": "Stylish fitness companion.",
+    "dimensions": {
+      "weight": "230",
+      "height": "36",
+      "width": "172",
+      "depth": "16"
+    },
+    "discountType": "Flash Sale",
+    "featureDes": "Notifications, step count, sleep monitor.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "5600",
+    "price": "7500",
+    "stock": "350",
+    "tags": ["budget", "hot"]
+  },
+  {
+    "name": "StepMaster Band",
+    "brand": "Vivo",
+    "categories": null,
+    "category": "Wearables",
+    "color": "#8E44AD",
+    "description": "Perfect for tracking daily activities.",
+    "dimensions": {
+      "weight": "215",
+      "height": "35",
+      "width": "170",
+      "depth": "16"
+    },
+    "discountType": "Festival Sale",
+    "featureDes": "Counts steps, calories, and sleep patterns.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "4200",
+    "price": "6000",
+    "stock": "420",
+    "tags": ["lightweight", "dailyuse"]
+  },
+  {
+    "name": "ActiveGear Pro",
+    "brand": "Lenovo",
+    "categories": null,
+    "category": "Smart Wearables",
+    "color": "#16A085",
+    "description": "Reliable and stylish smartwatch.",
+    "dimensions": {
+      "weight": "270",
+      "height": "40",
+      "width": "190",
+      "depth": "21"
+    },
+    "discountType": "New Year Offer",
+    "featureDes": "Notifications, fitness tracking, durable battery.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "7200",
+    "price": "9500",
+    "stock": "310",
+    "tags": ["stylish", "durable"]
+  },
+  {
+    "name": "HealthTrack Watch",
+    "brand": "Sony",
+    "categories": null,
+    "category": "Health Devices",
+    "color": "#C0392B",
+    "description": "Premium watch for health enthusiasts.",
+    "dimensions": {
+      "weight": "285",
+      "height": "42",
+      "width": "192",
+      "depth": "22"
+    },
+    "discountType": "Special Offer",
+    "featureDes": "Heart rate, oxygen monitoring, sleep tracking.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "12500",
+    "price": "15000",
+    "stock": "160",
+    "tags": ["health", "premium"]
+  },
+  {
+    "name": "ZenBand Ultra",
+    "brand": "Motorola",
+    "categories": null,
+    "category": "Fitness Gadgets",
+    "color": "#2C3E50",
+    "description": "Durable and advanced fitness band.",
+    "dimensions": {
+      "weight": "240",
+      "height": "38",
+      "width": "178",
+      "depth": "19"
+    },
+    "discountType": "Limited Time",
+    "featureDes": "Tracks all-day activities with precision.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "6800",
+    "price": "9500",
+    "stock": "270",
+    "tags": ["fitness", "durable"]
+  },
+  {
+    "name": "CoreFit Smartwatch",
+    "brand": "Dell",
+    "categories": null,
+    "category": "Fitness Gadgets",
+    "color": "#1F618D",
+    "description": "Smartwatch with efficient fitness tracking.",
+    "dimensions": {
+      "weight": "250",
+      "height": "39",
+      "width": "185",
+      "depth": "20"
+    },
+    "discountType": "Flash Sale",
+    "featureDes": "Calorie count, steps, sleep monitor, GPS.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "10500",
+    "price": "13000",
+    "stock": "210",
+    "tags": ["smart", "fitness"]
+  },
+  {
+    "name": "LifeTrack Pro",
+    "brand": "Nokia",
+    "categories": null,
+    "category": "Smart Devices",
+    "color": "#117A65",
+    "description": "All-day tracking with a premium feel.",
+    "dimensions": {
+      "weight": "265",
+      "height": "40",
+      "width": "188",
+      "depth": "21"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Heart rate, sleep, and step counter.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "7800",
+    "price": "9900",
+    "stock": "240",
+    "tags": ["budget", "value"]
+  },
+  {
+    "name": "Optima Fit Band",
+    "brand": "Asus",
+    "categories": null,
+    "category": "Wearables",
+    "color": "#884EA0",
+    "description": "Slim design fitness band for daily use.",
+    "dimensions": {
+      "weight": "210",
+      "height": "35",
+      "width": "172",
+      "depth": "17"
+    },
+    "discountType": "Holiday Sale",
+    "featureDes": "Tracks activities and provides real-time updates.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "5200",
+    "price": "7200",
+    "stock": "330",
+    "tags": ["slim", "lightweight"]
+  },
+  {
+    "name": "ProActive Watch",
+    "brand": "HP",
+    "categories": null,
+    "category": "Smart Wearables",
+    "color": "#CA6F1E",
+    "description": "High-quality smartwatch for professionals.",
+    "dimensions": {
+      "weight": "280",
+      "height": "43",
+      "width": "193",
+      "depth": "22"
+    },
+    "discountType": "Special Offer",
+    "featureDes": "All-in-one smartwatch with smart features.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "13500",
+    "price": "16000",
+    "stock": "140",
+    "tags": ["professional", "premium"]
+  },
+  {
+    "name": "Enduro Band",
+    "brand": "Acer",
+    "categories": null,
+    "category": "Exercise Gear",
+    "color": "#2E4053",
+    "description": "Durable and reliable band for workouts.",
+    "dimensions": {
+      "weight": "235",
+      "height": "37",
+      "width": "176",
+      "depth": "18"
+    },
+    "discountType": "Mega Sale",
+    "featureDes": "Tracks endurance and workout routines.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "6000",
+    "price": "8500",
+    "stock": "320",
+    "tags": ["durable", "sport"]
+  },
+  {
+    "name": "TrackMate Pro",
+    "brand": "Micromax",
+    "categories": null,
+    "category": "Fitness Gadgets",
+    "color": "#1C2833",
+    "description": "Your partner in fitness tracking.",
+    "dimensions": {
+      "weight": "225",
+      "height": "36",
+      "width": "174",
+      "depth": "17"
+    },
+    "discountType": "Limited Deal",
+    "featureDes": "Tracks daily health and syncs with mobile.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "4700",
+    "price": "6900",
+    "stock": "280",
+    "tags": ["compact", "budget"]
+  },
+  {
+    "name": "Wellness Watch",
+    "brand": "Toshiba",
+    "categories": null,
+    "category": "Health Devices",
+    "color": "#2471A3",
+    "description": "Premium health-focused smartwatch.",
+    "dimensions": {
+      "weight": "290",
+      "height": "44",
+      "width": "195",
+      "depth": "23"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Monitors health metrics and provides guidance.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "14000",
+    "price": "17000",
+    "stock": "130",
+    "tags": ["health", "luxury"]
+  },
+  {
+    "name": "PulseFit Band",
+    "brand": "Panasonic",
+    "categories": null,
+    "category": "Wearable Technology",
+    "color": "#AF7AC5",
+    "description": "Band that adapts to your lifestyle.",
+    "dimensions": {
+      "weight": "245",
+      "height": "38",
+      "width": "180",
+      "depth": "19"
+    },
+    "discountType": "Seasonal Sale",
+    "featureDes": "Sleep, step, and calorie tracking.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "5100",
+    "price": "7300",
+    "stock": "290",
+    "tags": ["lifestyle", "budget"]
+  },
+  {
+    "name": "TimeX Pro",
+    "brand": "Sharp",
+    "categories": null,
+    "category": "Smart Wearables",
+    "color": "#D35400",
+    "description": "Strong smartwatch with full smart features.",
+    "dimensions": {
+      "weight": "280",
+      "height": "41",
+      "width": "190",
+      "depth": "21"
+    },
+    "discountType": "Flash Deal",
+    "featureDes": "GPS, fitness, and connectivity.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "11500",
+    "price": "14500",
+    "stock": "190",
+    "tags": ["premium", "smart"]
+  },
+  {
+    "name": "DailyMove Band",
+    "brand": "LG",
+    "categories": null,
+    "category": "Fitness Equipment",
+    "color": "#2ECC71",
+    "description": "Everyday tracker for active lifestyles.",
+    "dimensions": {
+      "weight": "220",
+      "height": "36",
+      "width": "173",
+      "depth": "17"
+    },
+    "discountType": "Special Offer",
+    "featureDes": "Step, sleep, and calorie analysis.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "3900",
+    "price": "5800",
+    "stock": "450",
+    "tags": ["daily", "budget"]
+  },
+  {
+    "name": "TrackZone Smartwatch",
+    "brand": "Philips",
+    "categories": null,
+    "category": "Wearable Technology",
+    "color": "#7D3C98",
+    "description": "Smartwatch designed for daily productivity.",
+    "dimensions": {
+      "weight": "270",
+      "height": "40",
+      "width": "188",
+      "depth": "21"
+    },
+    "discountType": "New Year Deal",
+    "featureDes": "Fitness, productivity, and notifications.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "9800",
+    "price": "12500",
+    "stock": "170",
+    "tags": ["smart", "work"]
+  },
+  {
+    "name": "MotionLite Band",
+    "brand": "ZTE",
+    "categories": null,
+    "category": "Fitness Gadgets",
+    "color": "#16A085",
+    "description": "Lightweight band for active lifestyle.",
+    "dimensions": {
+      "weight": "200",
+      "height": "34",
+      "width": "170",
+      "depth": "16"
+    },
+    "discountType": "Festival Sale",
+    "featureDes": "Simple and durable for fitness needs.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "3500",
+    "price": "5200",
+    "stock": "500",
+    "tags": ["light", "active"]
+  },
+  {
+    "name": "PulseGuard Pro",
+    "brand": "Casio",
+    "categories": null,
+    "category": "Smart Devices",
+    "color": "#F1C40F",
+    "description": "Smart device with robust build quality.",
+    "dimensions": {
+      "weight": "295",
+      "height": "43",
+      "width": "192",
+      "depth": "22"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Smart notifications and health tracking.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "12800",
+    "price": "15500",
+    "stock": "150",
+    "tags": ["durable", "premium"]
+  },
+  {
+    "name": "FlexiFit Band",
+    "brand": "BlackBerry",
+    "categories": null,
+    "category": "Exercise Gear",
+    "color": "#34495E",
+    "description": "Flexible band designed for comfort.",
+    "dimensions": {
+      "weight": "215",
+      "height": "35",
+      "width": "172",
+      "depth": "16"
+    },
+    "discountType": "Weekly Sale",
+    "featureDes": "Tracks activity and provides comfort.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "offerPrice": "4400",
+    "price": "6300",
+    "stock": "390",
+    "tags": ["flexible", "daily"]
+  },
+  {
+    "name": "PrimeTrack Watch",
+    "brand": "HTC",
+    "categories": null,
+    "category": "Wearables",
+    "color": "#E67E22",
+    "description": "Reliable smartwatch with modern features.",
+    "dimensions": {
+      "weight": "280",
+      "height": "41",
+      "width": "190",
+      "depth": "21"
+    },
+    "discountType": "Special Offer",
+    "featureDes": "Fitness, GPS, and smart connectivity.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "offerPrice": "10800",
+    "price": "13500",
+    "stock": "180",
+    "tags": ["premium", "value"]
+  },
+
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#000000",
+    "description": "Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut tincidunt tincidunt erat. Aenean imperdiet.",
+    "dimensions": {
+      "weight": "340",
+      "height": "29",
+      "width": "480",
+      "depth": "52"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "name": "Classic Training Gloves",
+    "offerPrice": "2500",
+    "price": "3500",
+    "stock": "65",
+    "tags": ["fitness"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#111111",
+    "description": "Fusce ac felis sit amet ligula pharetra condimentum. Vestibulum eu odio. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi.",
+    "dimensions": {
+      "weight": "420",
+      "height": "36",
+      "width": "510",
+      "depth": "60"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "name": "Resistance Band Pro",
+    "offerPrice": "1800",
+    "price": "2200",
+    "stock": "140",
+    "tags": ["bestseller"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#222222",
+    "description": "Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.",
+    "dimensions": {
+      "weight": "300",
+      "height": "32",
+      "width": "490",
+      "depth": "58"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "In hac habitasse platea dictumst. Vivamus laoreet. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "name": "Balance Board",
+    "offerPrice": "4000",
+    "price": "4800",
+    "stock": "70",
+    "tags": ["training"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#333333",
+    "description": "Curabitur suscipit suscipit tellus. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc.",
+    "dimensions": {
+      "weight": "370",
+      "height": "31",
+      "width": "515",
+      "depth": "59"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "name": "Foam Roller Pro",
+    "offerPrice": "3000",
+    "price": "3600",
+    "stock": "120",
+    "tags": ["bestseller"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#444444",
+    "description": "Phasellus ullamcorper ipsum rutrum nunc. Vestibulum volutpat pretium libero. Cras id dui.",
+    "dimensions": {
+      "weight": "410",
+      "height": "34",
+      "width": "540",
+      "depth": "61"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Sed libero. Aliquam erat volutpat. Vivamus in erat ut urna cursus vestibulum.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "name": "Adjustable Kettlebell",
+    "offerPrice": "7500",
+    "price": "8800",
+    "stock": "50",
+    "tags": ["strength"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#555555",
+    "description": "Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.",
+    "dimensions": {
+      "weight": "460",
+      "height": "37",
+      "width": "555",
+      "depth": "63"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Pellentesque commodo eros a enim.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "name": "Medicine Ball",
+    "offerPrice": "4200",
+    "price": "5000",
+    "stock": "80",
+    "tags": ["fitness"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#666666",
+    "description": "Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "dimensions": {
+      "weight": "390",
+      "height": "33",
+      "width": "520",
+      "depth": "57"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "name": "Speed Jump Rope",
+    "offerPrice": "1600",
+    "price": "2000",
+    "stock": "150",
+    "tags": ["training"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#777777",
+    "description": "Morbi nec metus. Phasellus blandit leo ut odio. Integer tincidunt. Cras dapibus.",
+    "dimensions": {
+      "weight": "350",
+      "height": "30",
+      "width": "495",
+      "depth": "55"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "name": "Push Up Bars",
+    "offerPrice": "2700",
+    "price": "3300",
+    "stock": "95",
+    "tags": ["bestseller"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#888888",
+    "description": "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.",
+    "dimensions": {
+      "weight": "430",
+      "height": "38",
+      "width": "560",
+      "depth": "62"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum volutpat pretium libero. Cras id dui.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "name": "Ab Roller Wheel",
+    "offerPrice": "3100",
+    "price": "3900",
+    "stock": "60",
+    "tags": ["fitness"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#999999",
+    "description": "Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.",
+    "dimensions": {
+      "weight": "470",
+      "height": "39",
+      "width": "570",
+      "depth": "64"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "name": "Adjustable Dumbbells",
+    "offerPrice": "9500",
+    "price": "11000",
+    "stock": "40",
+    "tags": ["strength"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#AAAAAA",
+    "description": "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "dimensions": {
+      "weight": "360",
+      "height": "32",
+      "width": "500",
+      "depth": "56"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "name": "Weight Lifting Belt",
+    "offerPrice": "2800",
+    "price": "3500",
+    "stock": "75",
+    "tags": ["training"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#BBBBBB",
+    "description": "Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.",
+    "dimensions": {
+      "weight": "420",
+      "height": "35",
+      "width": "535",
+      "depth": "59"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce ac felis sit amet ligula pharetra condimentum.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "name": "Pilates Ring",
+    "offerPrice": "2100",
+    "price": "2700",
+    "stock": "100",
+    "tags": ["fitness"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#CCCCCC",
+    "description": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+    "dimensions": {
+      "weight": "380",
+      "height": "34",
+      "width": "525",
+      "depth": "58"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "False",
+    "name": "Core Slider Discs",
+    "offerPrice": "1500",
+    "price": "2000",
+    "stock": "130",
+    "tags": ["training"]
+  },
+  {
+    "brand": "Google",
+    "categories": null,
+    "category": "Exercise & Fitness Equipment",
+    "color": "#DDDDDD",
+    "description": "Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis.",
+    "dimensions": {
+      "weight": "400",
+      "height": "36",
+      "width": "545",
+      "depth": "61"
+    },
+    "discountType": "Eid Offer",
+    "featureDes": "Morbi nec metus. Phasellus blandit leo ut odio. Integer tincidunt. Cras dapibus.",
+    "images": [
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg",
+      "https://i.ibb.co/LdsqXGWv/smartwatch-screen-digital-device-1.jpg"
+    ],
+    "isFeatured": "True",
+    "name": "Yoga Block",
+    "offerPrice": "1300",
+    "price": "1800",
+    "stock": "160",
+    "tags": ["yoga"]
+  }
+]
