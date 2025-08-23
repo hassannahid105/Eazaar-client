@@ -6,13 +6,16 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile,
 } from "firebase/auth";
+import useAxiosPublic from "../hooks/axios/useAxiosPublic";
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
   const auth = getAuth(app);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const axiosPublic = useAxiosPublic();
   //?create a new account by passing the new user's email address and password
   const createUser = (email, password) => {
     console.log(email, password);
@@ -28,16 +31,43 @@ const AuthProvider = ({ children }) => {
   const logOut = () => {
     signOut(auth);
   };
+  // ? Update a user's profile
+  const updateUser = (name, photo) => {
+    setLoading(true);
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: photo,
+    });
+  };
   //   ? Set an authentication state observer and get user data
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      console.log(user);
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      // console.log(user);
       setUser(user);
+      //!  user data save in database
+      if (user) {
+        const userInfo = {
+          name: user.displayName,
+          email: user.email,
+          photo: user.photoURL,
+        };
+        const userSave = await axiosPublic.post("/users", userInfo);
+        console.log(userSave);
+      }
+
       setLoading(false);
     });
     return () => unsubscribe();
-  }, [auth]);
-  const authInfo = { user, loading, auth, createUser, signIn, logOut };
+  }, [auth, axiosPublic]);
+  const authInfo = {
+    user,
+    loading,
+    auth,
+    createUser,
+    signIn,
+    logOut,
+    updateUser,
+  };
 
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

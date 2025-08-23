@@ -4,22 +4,33 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
 const Register = () => {
-  const { register, handleSubmit } = useForm();
-  const { createUser } = useAuth();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const { createUser, updateUser, loading } = useAuth();
   const navigate = useNavigate();
   const onSubmit = (data) => {
     createUser(data.email, data.password)
       .then((userCredential) => {
         if (userCredential.user.email) {
-          Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "Register Successfully",
-            showConfirmButton: false,
-            timer: 1500,
-          });
+          updateUser(data.name, data.photo)
+            .then(() => {
+              // ! Profile updated!
+              Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Register Successfully",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+              navigate("/");
+            })
+            .catch((error) => {
+              console.log(error);
+            });
         }
-        navigate("/");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -28,9 +39,9 @@ const Register = () => {
       });
     // console.log(data.email, data.password);
   };
-  // if (loading) {
-  //   return <p>loading......</p>;
-  // }
+  if (loading) {
+    return <p>loading......</p>;
+  }
   return (
     <div className=" border-[1px] border-gray rounded-2xl  w-3/8 mx-auto py-10 my-20">
       <div className="uppercase text-xl flex items-center justify-center mb-4 gap-10  font-medium opacity-50">
@@ -47,36 +58,60 @@ const Register = () => {
             Your name
           </label>
           <input
-            {...register("name")}
+            {...register("name", { required: true })}
             type="text"
             id="name"
             className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5  dark:border-green-500"
             placeholder="Bonnie Green"
           />
+          {errors.name && (
+            <div className="pt-2 text-red-500 ml-2">This field is required</div>
+          )}
         </div>
         <div className="mb-3">
           <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">
             Email
           </label>
           <input
-            {...register("email")}
+            {...register("email", { required: true })}
             type="email"
             id="email"
             className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5  dark:border-green-500"
             placeholder="bonniegreen@gmail.com"
           />
+          {errors.email && (
+            <div className="pt-2 text-red-500 ml-2">This field is required</div>
+          )}
         </div>
         <div className="mb-3">
           <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">
             Password
           </label>
           <input
-            {...register("password")}
+            {...register("password", { required: true })}
             type="password"
             id="Password"
             className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5  dark:border-green-500"
             placeholder="2l6&j]m7Pd=_DA("
           />
+          {errors.email && (
+            <div className="pt-2 text-red-500 ml-2">This field is required</div>
+          )}
+        </div>
+        <div className="mb-3">
+          <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">
+            Photo URL
+          </label>
+          <input
+            {...register("photo", { required: true })}
+            type="text"
+            id="photo"
+            className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5  dark:border-green-500"
+            placeholder="2l6&j]m7Pd=_DA("
+          />
+          {errors.photo && (
+            <div className="pt-2 text-red-500 ml-2">This field is required</div>
+          )}
         </div>
         <div>
           <button className="btn text-white bg-main w-full">Register</button>

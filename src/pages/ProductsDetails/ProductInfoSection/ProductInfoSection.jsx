@@ -7,11 +7,13 @@ import useProduct from "../../../hooks/useProduct";
 import axios from "axios";
 import Swal from "sweetalert2";
 import useCarts from "../../../hooks/useCarts";
+import useAuth from "../../../hooks/useAuth";
 
 const ProductInfoSection = () => {
   const { id } = useParams();
   const { product } = useProduct(id);
   const { refetch } = useCarts();
+  const { user } = useAuth();
   const {
     name,
     description,
@@ -32,7 +34,12 @@ const ProductInfoSection = () => {
   console.log(product);
   const handleAddToCart = async () => {
     const cartInfo = {
-      name: "myname",
+      productId: product._id,
+      userEmail: user?.email,
+      name: product.name,
+      price: product.price,
+      date: Date(),
+      images: product.images,
     };
     const cartRes = await axios.post("http://localhost:5000/carts", cartInfo);
     console.log(cartRes.data.acknowledged);

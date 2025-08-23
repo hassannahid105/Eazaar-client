@@ -7,7 +7,6 @@ const Navbar = () => {
   const { user, logOut } = useAuth();
   const { carts } = useCarts();
   console.log(carts.length);
-  console.log(user);
   // ? nav options for mobile and desktop
   const navOptions = (
     <>
@@ -154,7 +153,10 @@ const Navbar = () => {
                     <img
                       alt="Tailwind CSS Navbar component"
                       // * TODO: CHANGE PROFILE PICTURE LATER
-                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                      src={
+                        user?.photoURL ||
+                        "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                      }
                     />
                   </div>
                 </div>
@@ -179,7 +181,7 @@ const Navbar = () => {
             </div>
           ) : (
             <NavLink
-              to="/register"
+              to="/login"
               className="flex justify-center items-center gap-1"
             >
               <FaRegUserCircle size={24} /> Login
