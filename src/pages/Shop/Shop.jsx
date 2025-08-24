@@ -1,6 +1,7 @@
 // import image from "../../assets/Home/products/42-1.png";
 import useProducts from "../../hooks/useProducts";
 import ProductCard from "./ProductCard/ProductCard";
+
 const Shop = () => {
   const { products } = useProducts();
   console.log(products);
