@@ -14,6 +14,7 @@ import Products from "../pages/Dashboard/Products/Products";
 import UpdateProduct from "../pages/Dashboard/UpdateProduct/UpdateProduct";
 import Shop from "../pages/Shop/Shop";
 import AddToCart from "../pages/AddToCart/AddToCart";
+import UserDashboard from "../pages/Dashboard/Dashboard/UserDashboard";
 
 const router = createBrowserRouter([
   {
@@ -53,24 +54,35 @@ const router = createBrowserRouter([
   // ? dashboard route
   {
     path: "dashboard",
-    element: <DashboardLayout />,
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
     children: [
+      // ? user access
       {
-        path: "/dashboard",
-        element: <Dashboard></Dashboard>,
+        index: true,
+        element: <UserDashboard></UserDashboard>,
       },
-      {
-        path: "/dashboard/products",
-        element: <Products></Products>,
-      },
-      {
-        path: "/dashboard/addproduct",
-        element: <ProductAdd></ProductAdd>,
-      },
-      {
-        path: "/dashboard/update/:id",
-        element: <UpdateProduct></UpdateProduct>,
-      },
+
+      // ! Admin access only
+      // {
+      //   path: "admin",
+      //   element: <Dashboard></Dashboard>,
+      // },
+      // {
+      //   path: "/dashboard/products",
+      //   element: <Products></Products>,
+      // },
+      // {
+      //   path: "/dashboard/addproduct",
+      //   element: <ProductAdd></ProductAdd>,
+      // },
+      // {
+      //   path: "/dashboard/update/:id",
+      //   element: <UpdateProduct></UpdateProduct>,
+      // },
     ],
   },
 ]);

@@ -4,10 +4,10 @@ import image from "../../../assets/Home/slider/banner-campaign-51-1-1.png";
 import { useParams } from "react-router";
 // import { useEffect, useState } from "react";
 import useProduct from "../../../hooks/useProduct";
-import axios from "axios";
 import Swal from "sweetalert2";
 import useCarts from "../../../hooks/useCarts";
 import useAuth from "../../../hooks/useAuth";
+import useAxiosSecure from "../../../hooks/axios/useAxiosSecure";
 
 const ProductInfoSection = () => {
   const { id } = useParams();
@@ -31,6 +31,7 @@ const ProductInfoSection = () => {
     // pictures,
     images,
   } = product;
+  const axiosSecure = useAxiosSecure();
   console.log(product);
   const handleAddToCart = async () => {
     const cartInfo = {
@@ -41,8 +42,11 @@ const ProductInfoSection = () => {
       date: Date(),
       images: product.images,
     };
-    const cartRes = await axios.post("http://localhost:5000/carts", cartInfo);
-    console.log(cartRes.data.acknowledged);
+    const cartRes = await axiosSecure.post(
+      "http://localhost:5000/carts",
+      cartInfo
+    );
+    // console.log(cartRes.data.acknowledged);
     if (cartRes.data.acknowledged) {
       refetch();
       Swal.fire({

@@ -9,6 +9,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import useAxiosPublic from "../hooks/axios/useAxiosPublic";
+import useAxiosSecure from "../hooks/axios/useAxiosSecure";
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
@@ -16,6 +17,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const axiosPublic = useAxiosPublic();
+  const axiosSecure = useAxiosSecure();
   //?create a new account by passing the new user's email address and password
   const createUser = (email, password) => {
     console.log(email, password);
@@ -50,15 +52,18 @@ const AuthProvider = ({ children }) => {
           name: user.displayName,
           email: user.email,
           photo: user.photoURL,
+          role: "admin",
         };
-        const userSave = await axiosPublic.post("/users", userInfo);
-        console.log(userSave);
+        const userSaved = await axiosPublic.post("/users", userInfo);
+        const jwtres = await axiosSecure.post("/generateToken", {
+          email: user?.email,
+        });
       }
 
       setLoading(false);
     });
     return () => unsubscribe();
-  }, [auth, axiosPublic]);
+  }, [auth, axiosPublic, axiosSecure]);
   const authInfo = {
     user,
     loading,

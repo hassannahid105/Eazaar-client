@@ -24,20 +24,6 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-sm font-semibold">
-        <NavLink
-          to="/dashboard"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-blue-500 hover:text-blue-300"
-              : ""
-          }
-        >
-          Dashboard
-        </NavLink>
-      </li>
 
       <li className="text-sm font-semibold">
         <NavLink
@@ -165,10 +151,9 @@ const Navbar = () => {
                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
                 >
                   <li>
-                    <p className="justify-between">
-                      Profile
-                      <span className="badge">New</span>
-                    </p>
+                    <Link to="/dashboard" className=" ">
+                      <p className="justify-between">Profile</p>
+                    </Link>
                   </li>
                   <li>
                     <p>Settings</p>
