@@ -52,16 +52,17 @@ const AuthProvider = ({ children }) => {
           name: user.displayName,
           email: user.email,
           photo: user.photoURL,
-          role: "admin",
+          role: "user",
         };
         const userSaved = await axiosPublic.post("/users", userInfo);
         const jwtres = await axiosSecure.post("/generateToken", {
           email: user?.email,
         });
+        console.log(userSaved, jwtres);
       }
-
       setLoading(false);
     });
+
     return () => unsubscribe();
   }, [auth, axiosPublic, axiosSecure]);
   const authInfo = {

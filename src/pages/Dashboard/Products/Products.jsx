@@ -7,7 +7,7 @@ import { Link } from "react-router";
 
 const Products = () => {
   //   const { _id, name, images, price, offerPrice, brand, stock } = useProducts();
-  const { products, refetch } = useProducts();
+  const { products, refetch, isLoading } = useProducts();
   const handleDelete = async (id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -34,6 +34,9 @@ const Products = () => {
       }
     });
   };
+  if (isLoading) {
+    return <p>loading.....</p>;
+  }
   return (
     <div>
       <div className="overflow-x-auto">
@@ -51,7 +54,7 @@ const Products = () => {
           </thead>
           <tbody>
             {/* row 1 */}
-            {products.map((item, index) => (
+            {products?.map((item, index) => (
               <tr key={item._id}>
                 <th>
                   <label>{index + 1}</label>

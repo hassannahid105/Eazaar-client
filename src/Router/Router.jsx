@@ -15,6 +15,7 @@ import UpdateProduct from "../pages/Dashboard/UpdateProduct/UpdateProduct";
 import Shop from "../pages/Shop/Shop";
 import AddToCart from "../pages/AddToCart/AddToCart";
 import UserDashboard from "../pages/Dashboard/Dashboard/UserDashboard";
+import AdminRoute from "./AdminRoute";
 
 const router = createBrowserRouter([
   {
@@ -63,26 +64,46 @@ const router = createBrowserRouter([
       // ? user access
       {
         index: true,
-        element: <UserDashboard></UserDashboard>,
+        element: (
+          <AdminRoute>
+            <UserDashboard></UserDashboard>
+          </AdminRoute>
+        ),
       },
 
       // ! Admin access only
-      // {
-      //   path: "admin",
-      //   element: <Dashboard></Dashboard>,
-      // },
-      // {
-      //   path: "/dashboard/products",
-      //   element: <Products></Products>,
-      // },
-      // {
-      //   path: "/dashboard/addproduct",
-      //   element: <ProductAdd></ProductAdd>,
-      // },
-      // {
-      //   path: "/dashboard/update/:id",
-      //   element: <UpdateProduct></UpdateProduct>,
-      // },
+      {
+        path: "admin",
+        element: (
+          <AdminRoute>
+            <Dashboard></Dashboard>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/products",
+        element: (
+          <AdminRoute>
+            <Products></Products>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/addproduct",
+        element: (
+          <AdminRoute>
+            <ProductAdd></ProductAdd>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/update/:id",
+        element: (
+          <AdminRoute>
+            <UpdateProduct></UpdateProduct>
+          </AdminRoute>
+        ),
+      },
     ],
   },
 ]);

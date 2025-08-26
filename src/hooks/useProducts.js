@@ -1,8 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "./axios/useAxiosPublic";
+import useAxiossecure from "./axios/useAxiosSecure";
 const useProducts = () => {
   // Access the client
-  const axiosPublic = useAxiosPublic();
+  // const axiosPublic = useAxiosPublic();
+  const axiosSecure = useAxiossecure();
 
   const {
     data: products = [],
@@ -14,7 +15,7 @@ const useProducts = () => {
     queryKey: ["products"],
     queryFn: async () => {
       // const res = await axios(`https://eazaar-server.vercel.app/products`);
-      const res = await axiosPublic(`/products`);
+      const res = await axiosSecure(`/products`);
       return res.data;
     },
   });
