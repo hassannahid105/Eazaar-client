@@ -106,7 +106,9 @@ const UpdateProduct = () => {
     }
     // alert add and regericet
   };
-
+  if (isLoading) {
+    return <p>loading................................</p>;
+  }
   return (
     <div className="text-xl mb-300">
       <form onSubmit={handleSubmit(onSubmit)}>
