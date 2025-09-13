@@ -4,14 +4,16 @@ import ImageUploading from "react-images-uploading";
 // import "./style.css";
 import { MdOutlineRestorePage } from "react-icons/md";
 import { IoCheckmark } from "react-icons/io5";
-import axios from "axios";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
+import useAxiosSecure from "../../../hooks/axios/useAxiosSecure";
+import axios from "axios";
 const ProductAdd = () => {
   const [images, setImages] = useState([]);
   const maxNumber = 10;
   const uploadedImageUrls = [];
   const navigate = useNavigate();
+  const axiosSecure = useAxiosSecure();
   const {
     register,
     handleSubmit,
@@ -66,10 +68,7 @@ const ProductAdd = () => {
       }
     }
 
-    const productsResponse = await axios.post(
-      "http://localhost:5000/products",
-      productObj
-    );
+    const productsResponse = await axiosSecure.post("/products", productObj);
     console.log(productsResponse);
     if (productsResponse?.status === 200) {
       Swal.fire({

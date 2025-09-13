@@ -13,7 +13,7 @@ const RootLayout = () => {
         </div>
       </div>
       <div className=" mx-auto px-4 md:px-20">
-        <div className="h-[48px] fixed top-0 z-50 bg-white shadow-md ">
+        <div className="h-[48px] fixed top-0 z-50 bg-white shadow-md w-full md:w-0">
           <Navbar></Navbar>
         </div>
         {/* Mega tool bart */}

@@ -8,10 +8,13 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { useNavigate, useParams } from "react-router";
 import useProduct from "../../../hooks/useProduct";
+import useAxiosSecure from "../../../hooks/axios/useAxiosSecure";
 const UpdateProduct = () => {
   const [images, setImages] = useState([]);
   const { id } = useParams();
   const { product, isLoading } = useProduct(id);
+  const axiosSecure = useAxiosSecure();
+
   console.table(product);
   const {
     name,
@@ -89,8 +92,8 @@ const UpdateProduct = () => {
         depth: data.depth,
       },
     };
-    const productsResponse = await axios.patch(
-      `http://localhost:5000/products/${id}`,
+    const productsResponse = await axiosSecure.patch(
+      `/products/${id}`,
       productObj
     );
     console.log(productsResponse);

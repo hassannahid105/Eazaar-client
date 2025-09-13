@@ -1,13 +1,14 @@
-import axios from "axios";
 import useProducts from "../../../hooks/useProducts";
 import { GrUpdate } from "react-icons/gr";
 import { MdDeleteOutline } from "react-icons/md";
 import Swal from "sweetalert2";
 import { Link } from "react-router";
+import useAxiosSecure from "../../../hooks/axios/useAxiosSecure";
 
 const Products = () => {
   //   const { _id, name, images, price, offerPrice, brand, stock } = useProducts();
   const { products, refetch, isLoading } = useProducts();
+  const axiosSecure = useAxiosSecure();
   const handleDelete = async (id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -19,9 +20,7 @@ const Products = () => {
       confirmButtonText: "Yes, delete it!",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        const response = await axios.delete(
-          `http://localhost:5000/products/${id}`
-        );
+        const response = await axiosSecure.delete(`/products/${id}`);
 
         if (response.data.deletedCount > 0) {
           refetch();

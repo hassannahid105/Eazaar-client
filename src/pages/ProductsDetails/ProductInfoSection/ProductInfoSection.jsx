@@ -42,10 +42,7 @@ const ProductInfoSection = () => {
       date: Date(),
       images: product.images,
     };
-    const cartRes = await axiosSecure.post(
-      "http://localhost:5000/carts",
-      cartInfo
-    );
+    const cartRes = await axiosSecure.post("/carts", cartInfo);
     // console.log(cartRes.data.acknowledged);
     if (cartRes.data.acknowledged) {
       refetch();
