@@ -21,43 +21,78 @@ const Test = () => {
   //   console.log(response);
   // };
   return (
-    <form className="max-w-lg mx-auto">
-      <div className="flex">
-        <div className="relative w-full">
-          <input
-            type="search"
-            id="search-dropdown"
-            className="block p-2.5 w-full z-20 text-sm text-black bg-gray-50 rounded-e-lg border-s-gray-200  border border-gray-200 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-s-gray-200  dark:border-gray-200 dark:placeholder-gray-400 dark:text-black dark:focus:border-blue-500 py-4"
-            placeholder="Search Mockups, Logos, Design Templates..."
-            required
-          />
-          <button
-            type="submit"
-            className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-main rounded-e-lg border border-blue-700 hover:bg-main focus:ring-4 focus:outline-none focus:ring-skydeep dark:bg-main dark:hover:bg-skydeep dark:focus:ring-skydeep"
-          >
+    <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
-              className="w-4 h-4"
-              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
               fill="none"
-              viewBox="0 0 20 20"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
+              {" "}
               <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-              />
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />{" "}
             </svg>
-            <span className="sr-only">Search</span>
-            <span className="sr-only">Search</span>
-            <span className="sr-only">Search</span>
-            <span className="sr-only">Search</span>
-          </button>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <a>Item 1</a>
+            </li>
+            <li>
+              <a>Parent</a>
+              <ul className="p-2">
+                <li>
+                  <a>Submenu 1</a>
+                </li>
+                <li>
+                  <a>Submenu 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>Item 3</a>
+            </li>
+          </ul>
         </div>
+        <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
-    </form>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a>Item 1</a>
+          </li>
+          <li>
+            <details>
+              <summary>Parent</summary>
+              <ul className="p-2">
+                <li>
+                  <a>Submenu 1</a>
+                </li>
+                <li>
+                  <a>Submenu 2</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a>Item 3</a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <a className="btn">Button</a>
+      </div>
+    </div>
   );
 };
 

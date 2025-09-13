@@ -4,6 +4,7 @@ import { FaFacebookF, FaSquareInstagram, FaTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { Link } from "react-router";
 const TopSection = () => {
+  // TODO: show later
   return (
     <div className=" hidden md:flex items-center justify-between py-2 bg-gray-100">
       <div className="flex gap-4 items-center justify-center">

@@ -7,26 +7,26 @@ import MegaToolbar from "../../component/MegaToolbar/MegaToolbar";
 const RootLayout = () => {
   return (
     <div>
-      <div className="bg-gray-100">
-        <div className="container mx-auto sm:px-0  lg:px-20">
-          <TopSection></TopSection>
+      <div className="">
+        <div className="container mx-auto sm:px-0 lg:px-20 h-12">
+          {/* <TopSection></TopSection> */}
         </div>
       </div>
-      <div className="container mx-auto px-4 md:px-20">
-        <div className="">
+      <div className=" mx-auto px-4 md:px-20">
+        <div className="h-[48px] fixed top-0 z-50 bg-white shadow-md ">
           <Navbar></Navbar>
         </div>
-        <div>
-          <MegaToolbar></MegaToolbar>
-        </div>
-        <div>
-          <Outlet></Outlet>
-        </div>
-      </div>
-      <div className="">
-        {/* */}
-        <div className="">
-          <Footer></Footer>
+        {/* Mega tool bart */}
+        <div className="h-[calc(100vh-48px)] my-6">
+          <div className="">
+            <MegaToolbar></MegaToolbar>
+          </div>
+          <div>
+            <Outlet></Outlet>
+          </div>
+          <div className="">
+            <Footer></Footer>
+          </div>
         </div>
       </div>
     </div>
