@@ -16,6 +16,7 @@ import Shop from "../pages/Shop/Shop";
 import AddToCart from "../pages/AddToCart/AddToCart";
 import UserDashboard from "../pages/Dashboard/Dashboard/UserDashboard";
 import AdminRoute from "./AdminRoute";
+import AboutUs from "../pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop></Shop>,
+      },
+      {
+        path: "/about",
+        element: <AboutUs></AboutUs>,
       },
       {
         path: "/details/:id",
