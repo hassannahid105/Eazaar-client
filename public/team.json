@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "1",
+    "name": "Nahid Hassan",
+    "title": "Founder & CEO",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  },
+  {
+    "_id": "2",
+    "name": "Sadia Rahman",
+    "title": "Project Manager",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  },
+  {
+    "_id": "3",
+    "name": "Arif Chowdhury",
+    "title": "Lead Developer",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  },
+  {
+    "_id": "4",
+    "name": "Mitu Akter",
+    "title": "UI/UX Designer",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  },
+  {
+    "_id": "5",
+    "name": "Rafiul Islam",
+    "title": "Frontend Developer",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  },
+  {
+    "_id": "6",
+    "name": "Nusrat Jahan",
+    "title": "Backend Developer",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  },
+  {
+    "_id": "7",
+    "name": "Shuvo Ahmed",
+    "title": "Marketing Specialist",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  },
+  {
+    "_id": "8",
+    "name": "Tahmina Akter",
+    "title": "Customer Support",
+    "image": "https://i.ibb.co.com/Rk2z0XjS/team-41-1.png"
+  }
+]
