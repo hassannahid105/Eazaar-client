@@ -1,8 +1,8 @@
 import historyImg from "../../../assets/AboutUs/about_us_img_21-1.png";
 const OurVision = () => {
   return (
-    <section className="grid grid-cols-4 section gap-12 items-center justify-center">
-      <div className="col-span-2">
+    <section className="grid grid-cols-4 section gap-12 items-center justify-center py-20">
+      <div className="col-span-2 ml-10">
         <img src={historyImg} alt="" />
       </div>
       <div className="col-span-2 w-10/12 py-10">
