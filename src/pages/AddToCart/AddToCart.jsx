@@ -1,27 +1,22 @@
 import useCarts from "../../hooks/useCarts";
+import { RiDeleteBin6Fill } from "react-icons/ri";
 const AddToCart = () => {
   const { carts } = useCarts();
   return (
-    <div>
-      <h2>Add to Cart {carts.length}</h2>
-      <div className="grid grid-cols-12">
-        <div className="overflow-x-auto col-span-8">
+    <div className="md:h-[70vh] justify-center items-center flex flex-col">
+      <h2 className="text-2xl my-6 text-gray">Total Items: {carts.length}</h2>
+      <div className="md:grid grid-cols-12 gap-8 ">
+        <div className="overflow-x-auto col-span-8 bg-gray-100">
           <table className="table">
             {/* head */}
 
             <tbody>
-              {/* row 1 */}
               {carts?.map((cart) => (
                 <tr key={cart._id}>
-                  <th>
-                    <label>
-                      <input type="checkbox" className="checkbox" />
-                    </label>
-                  </th>
                   <td>
                     <div className="grid grid-cols-3">
                       <div className="avatar">
-                        <div className="mask mask-squircle  w-12 h-24 ">
+                        <div className="w-12">
                           <img
                             src={cart?.images?.[0]}
                             alt="Avatar Tailwind CSS Component"
@@ -35,25 +30,47 @@ const AddToCart = () => {
                       </div>
                     </div>
                   </td>
+                  <td>${cart.price}</td>
                   <td>
-                    ${cart.price}
-                    <br />
-                    <span className="badge badge-ghost badge-sm">
-                      {cart.offerprice}
-                    </span>
-                    <button> delete</button>
+                    <RiDeleteBin6Fill size={26} className="text-red-500" />
                   </td>
-
-                  <th>
-                    <button className="btn btn-ghost btn-xs">details</button>
-                  </th>
                 </tr>
               ))}
             </tbody>
             {/* foot */}
           </table>
         </div>
-        <div>hello</div>
+        <div className="col-span-4 bg-gray-100 p-4">
+          <p className="text-xl font-medium mb-2">Order Summary</p>
+          <p className="flex justify-between items-center text-gray">
+            Subtotal (2 items) <span>$100</span>
+          </p>
+          <p className="flex justify-between items-center text-gray mb-8">
+            Shipping Fee <span>$10</span>
+          </p>
+          <div className="flex items-center mb-6">
+            <div className="w-full">
+              <label className="input validator ">
+                <input
+                  type="email"
+                  placeholder="Enter Voucher Code"
+                  required
+                  className=""
+                />
+              </label>
+            </div>
+            <button className="btn bg-skydeep text-white w-[100px]">
+              Apply
+            </button>
+          </div>
+          <p className="flex justify-between items-center mb-4">
+            <span>Total</span>
+            <span className="text-2xl text-main font-bold">$1,739</span>
+          </p>
+          <button className="text-center w-full bg-skydeep py-3  rounded-sm text-white uppercase font-medium text-sm">
+            Proceed to checkout (2){" "}
+          </button>
+        </div>
       </div>
     </div>
   );
