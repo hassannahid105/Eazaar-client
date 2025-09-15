@@ -1,7 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import image from "../../../assets/Home/slider/banner-campaign-51-1-1.png";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 // import { useEffect, useState } from "react";
 import useProduct from "../../../hooks/useProduct";
 import Swal from "sweetalert2";
@@ -14,6 +14,7 @@ const ProductInfoSection = () => {
   const { product } = useProduct(id);
   const { refetch } = useCarts();
   const { user } = useAuth();
+  const navigate = useNavigate();
   const {
     name,
     description,
@@ -34,6 +35,9 @@ const ProductInfoSection = () => {
   const axiosSecure = useAxiosSecure();
   console.log(product);
   const handleAddToCart = async () => {
+    if (!user) {
+      return navigate("/login");
+    }
     const cartInfo = {
       productId: product._id,
       userEmail: user?.email,

@@ -155,7 +155,7 @@ const Footer = () => {
       </div>
       <footer className="footer bg-main text-base-content border-base-300 px-10  md:flex items-center py-6 md:justify-between">
         <aside className="grid-flow-col items-center">
-          <p className="text-gray opacity-70 text-sm">
+          <p className="text-white  text-sm">
             &copy; 2021 <span className="text-black ">Eazaar</span> All Rights
             Reserved
           </p>
@@ -163,25 +163,25 @@ const Footer = () => {
         <nav className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4">
             <div>
-              <p className="text-gray  text-sm flex items-center justify-center gap-1">
-                <FaFacebookF />
+              <p className="text-white  text-sm flex items-center justify-center gap-1">
+                <FaFacebookF className="" />
                 <span>Facebook</span>
               </p>
             </div>
             <div>
-              <p className="text-gray  text-sm flex items-center justify-center gap-1">
+              <p className="text-white  text-sm flex items-center justify-center gap-1">
                 <FaTwitter />
                 <span>x</span>
               </p>
             </div>
             <div>
-              <p className="text-gray  text-sm flex items-center justify-center gap-1">
+              <p className="text-white  text-sm flex items-center justify-center gap-1">
                 <FaPinterest />
                 <span> Pinterest</span>
               </p>
             </div>
             <div>
-              <p className="text-gray  text-sm flex items-center justify-center gap-1">
+              <p className="text-white  text-sm flex items-center justify-center gap-1">
                 <FaTiktok />
                 <span>Tiktok</span>
               </p>
