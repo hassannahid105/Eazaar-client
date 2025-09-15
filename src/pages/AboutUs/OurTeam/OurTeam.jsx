@@ -11,9 +11,11 @@ const OurTeam = () => {
     <section className="section">
       <div>
         <p className="text-skydeep text-sm font-semibold">ANGELS</p>
-        <h3 className="text-5xl font-medium mt-2 mb-12">Meet with our Team</h3>
+        <h3 className="text-2xl md:text-5xl font-medium mt-2 mb-4 md:mb-12">
+          Meet with our Team
+        </h3>
       </div>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {teams?.map((team) => (
           <div key={team._id}>
             <div className="card bg-base-100 shadow-sm">

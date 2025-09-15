@@ -5,7 +5,7 @@ import OurVision from "./OUrVision/OUrVision";
 
 const AboutUs = () => {
   return (
-    <div className="w-10/12 mx-auto">
+    <div className="md:w-10/12 mx-auto">
       <OurHistory></OurHistory>
       <div className="bg-gray-100">
         <OurVision></OurVision>

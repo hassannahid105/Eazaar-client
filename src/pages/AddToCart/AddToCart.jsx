@@ -3,7 +3,7 @@ import { RiDeleteBin6Fill } from "react-icons/ri";
 const AddToCart = () => {
   const { carts } = useCarts();
   return (
-    <div className="md:h-[70vh] justify-center items-center flex flex-col">
+    <div className=" justify-center items-center flex flex-col my-10 scroll-auto">
       <h2 className="text-2xl my-6 text-gray">Total Items: {carts.length}</h2>
       <div className="md:grid grid-cols-12 gap-8 ">
         <div className="overflow-x-auto col-span-8 bg-gray-100">
@@ -14,9 +14,9 @@ const AddToCart = () => {
               {carts?.map((cart) => (
                 <tr key={cart._id}>
                   <td>
-                    <div className="grid grid-cols-3">
+                    <div className="md:grid grid-cols-3 mb-2">
                       <div className="avatar">
-                        <div className="w-12">
+                        <div className="w-24 mb-2">
                           <img
                             src={cart?.images?.[0]}
                             alt="Avatar Tailwind CSS Component"
@@ -40,7 +40,7 @@ const AddToCart = () => {
             {/* foot */}
           </table>
         </div>
-        <div className="col-span-4 bg-gray-100 p-4">
+        <div className="col-span-4 bg-gray-100 p-4 h-[310px]">
           <p className="text-xl font-medium mb-2">Order Summary</p>
           <p className="flex justify-between items-center text-gray">
             Subtotal (2 items) <span>$100</span>
@@ -48,7 +48,7 @@ const AddToCart = () => {
           <p className="flex justify-between items-center text-gray mb-8">
             Shipping Fee <span>$10</span>
           </p>
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-6 ">
             <div className="w-full">
               <label className="input validator ">
                 <input

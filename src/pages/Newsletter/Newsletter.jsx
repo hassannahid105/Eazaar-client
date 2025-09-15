@@ -1,8 +1,10 @@
 const Newsletter = () => {
   return (
-    <div className="flex justify-between items-center py-20 mx-10 my-40">
-      <div className="flex flex-col items-center justify-center">
-        <h3 className="text-3xl opacity-90">Newsletter & Get Updates</h3>
+    <div className="md:flex justify-between items-center py-20 mx-10 my-10 md:my-40">
+      <div className="flex flex-col items-center justify-center mb-8 md:mb-0">
+        <h3 className=" text-xl md:text-3xl opacity-90 md:mb-2">
+          Newsletter & Get Updates
+        </h3>
         <p>Sign up for our newsletter to get up-to-date from us</p>
       </div>
       <div>

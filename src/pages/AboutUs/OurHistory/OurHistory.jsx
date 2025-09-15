@@ -1,10 +1,10 @@
 import historyImg from "../../../assets/AboutUs/about_us_img_11-1.png";
 const OurHistory = () => {
   return (
-    <section className="grid grid-cols-5 section gap-12 items-center justify-center">
-      <div className="col-span-3 w-10/12 py-10">
+    <section className="grid md:grid-cols-5 grid-cols-1 section gap-12 items-center justify-center">
+      <div className="col-span-3 md:w-10/12 md:py-10  order-2">
         <p className="text-skydeep font-medium py-4">OUR HISTORY</p>
-        <h3 className="text-4xl font-bold my-6">
+        <h3 className="text-xl md:text-4xl font-bold md:my-6">
           Creative and renovate fashion trends
         </h3>
         <p className="opacity-70 my-4">
@@ -28,11 +28,10 @@ const OurHistory = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-2">
-        <img src={historyImg} alt="" />
+      <div className="col-span-2 sm:order-1 md:order-2 w-full">
+        <img src={historyImg} alt="" className="" />
       </div>
     </section>
   );
 };
-
 export default OurHistory;
