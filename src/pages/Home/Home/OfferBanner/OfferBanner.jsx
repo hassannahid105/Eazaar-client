@@ -12,10 +12,14 @@ const OfferBanner = () => {
         </Link>
       </div>
       <div>
-        <img src={banner2} alt="" />
+        <Link to="/shop">
+          <img src={banner2} alt="" />
+        </Link>
       </div>
       <div>
-        <img src={banner3} alt="" />
+        <Link to="/shop">
+          <img src={banner3} alt="" />
+        </Link>
       </div>
     </section>
   );

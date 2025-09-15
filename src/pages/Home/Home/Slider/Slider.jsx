@@ -34,10 +34,10 @@ const Slider = () => {
       </div>
       {/* TODO: slider cover */}
       <div className="col-span-6 md:col-span-2 flex flex-col gap-8 mt-4">
-        <div className="border-2 border-amber-600">
+        <div className="">
           <img src={bannerCampaign} alt="bannerCampaign" />
         </div>
-        <div className="border-2 border-amber-600">
+        <div className="">
           <img src={bannerCampaign2} alt="bannerCampaign2" />
         </div>
       </div>
