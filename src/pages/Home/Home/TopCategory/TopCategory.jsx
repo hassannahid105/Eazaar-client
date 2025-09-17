@@ -15,7 +15,7 @@ const TopCategory = () => {
   // console.log(projector);
   return (
     //! TODO:  category based products loaging..........
-    <section className="section">
+    <section className="section ">
       <div>
         <Tabs>
           <TabList className="md:flex justify-between items-center">

@@ -4,7 +4,7 @@ import watch from "../../../../assets/Home/other/hand_watch1-1-1.png";
 import { Link } from "react-router";
 const HotSale = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3">
+    <section className="grid grid-cols-1 md:grid-cols-3 bg-gray-100">
       <div className="col-span-1 mr-12">
         {/* TODO: change image later */}
         <div className="border-2 border-red-600 mb-4">
@@ -35,7 +35,7 @@ const HotSale = () => {
               </TabList>
               <div className="border-b-[1px] border-gray-200"></div>
               <TabPanel>
-                <div className="grid grid-cols-1 md:grid-cols-3 mt-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 mt-6 bg-white">
                   <div className=" relative border-r-[1px] border-gray-200">
                     <figure>
                       <img src={hot} alt="" />

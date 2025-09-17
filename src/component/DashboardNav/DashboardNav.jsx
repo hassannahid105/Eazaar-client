@@ -4,14 +4,13 @@ import { AiFillAmazonSquare } from "react-icons/ai";
 import { IoBagAddOutline } from "react-icons/io5";
 import { Link } from "react-router";
 import { AiOutlineProduct } from "react-icons/ai";
-// import useAdmin from "../../hooks/useAdmin";
+import useAdmin from "../../hooks/useAdmin";
 const DashboardNav = () => {
-  // const { isAdmin, isAdminLoading } = useAdmin();
-  const isAdmin = false;
+  const { isAdmin, isAdminLoading } = useAdmin();
   // const isAdmin = false;
-  // if (isAdminLoading) {
-  //   return <p>loading......</p>;
-  // }
+  if (isAdminLoading) {
+    return <p>loading......</p>;
+  }
   return (
     <div className="">
       {isAdmin ? (

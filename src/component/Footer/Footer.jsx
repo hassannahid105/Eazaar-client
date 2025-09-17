@@ -156,8 +156,8 @@ const Footer = () => {
       <footer className="footer bg-main text-base-content border-base-300 px-10  md:flex items-center py-6 md:justify-between">
         <aside className="grid-flow-col items-center">
           <p className="text-white  text-sm">
-            &copy; 2021 <span className="text-black ">Eazaar</span> All Rights
-            Reserved
+            &copy; 2021 <span className="text-skydeep font-bold">Eazaar</span>{" "}
+            All Rights Reserved
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
