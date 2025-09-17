@@ -88,15 +88,16 @@ const ProductAdd = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="md:flex items-center justify-between mr-10 mb-12">
           <div className="font-semibold mb-4 md:mb-0">Add New Product</div>
-
-          <div className="md:flex items-center justify-center gap-4">
-            <div className="flex items-center justify-center border-2 border-gray-200 px-4 py-2 rounded-full mb-6 md:mb-0">
-              <MdOutlineRestorePage size={24} />
+          <div className=" flex items-center justify-center gap-4">
+            <div className="flex items-center justify-center border-2 border-gray-200 px-4 py-2 rounded-full">
+              <span>
+                <MdOutlineRestorePage size={24} />
+              </span>
               <span>save Draf</span>
             </div>
             <button
+              className="flex items-center justify-center  px-4 py-2 rounded-full bg-main text-white"
               type="submit"
-              className="flex items-center justify-center  px-4 py-2 rounded-full bg-main w-full"
             >
               <IoCheckmark size={24} />
               <span> Add Product</span>

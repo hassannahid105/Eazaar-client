@@ -9,7 +9,6 @@ import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../pages/Dashboard/Dashboard/Dashboard";
 import DashboardLayout from "../Layout/Dashboard/DashboardLayout";
 import ProductAdd from "../pages/Dashboard/ProductAdd/ProductAdd";
-import Test from "../Test/Test";
 import Products from "../pages/Dashboard/Products/Products";
 import UpdateProduct from "../pages/Dashboard/UpdateProduct/UpdateProduct";
 import Shop from "../pages/Shop/Shop";
@@ -17,7 +16,7 @@ import AddToCart from "../pages/AddToCart/AddToCart";
 import UserDashboard from "../pages/Dashboard/Dashboard/UserDashboard";
 import AdminRoute from "./AdminRoute";
 import AboutUs from "../pages/AboutUs/AboutUs";
-
+import Faq from "../pages/FAQ/FAQ";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,10 +26,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      {
-        path: "/test",
-        element: <Test></Test>,
-      },
+
       {
         path: "shop",
         element: <Shop></Shop>,
@@ -38,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/faq",
+        element: <Faq></Faq>,
       },
       {
         path: "/details/:id",
@@ -66,16 +66,11 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      // ? user access
+      // ! user access only
       {
-        index: true,
-        element: (
-          <AdminRoute>
-            <UserDashboard></UserDashboard>
-          </AdminRoute>
-        ),
+        path: "user",
+        element: <UserDashboard></UserDashboard>,
       },
-
       // ! Admin access only
       {
         path: "admin",
@@ -85,6 +80,7 @@ const router = createBrowserRouter([
           </AdminRoute>
         ),
       },
+
       {
         path: "/dashboard/products",
         element: (

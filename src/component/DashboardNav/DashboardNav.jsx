@@ -7,7 +7,7 @@ import { AiOutlineProduct } from "react-icons/ai";
 // import useAdmin from "../../hooks/useAdmin";
 const DashboardNav = () => {
   // const { isAdmin, isAdminLoading } = useAdmin();
-  const isAdmin = true;
+  const isAdmin = false;
   // const isAdmin = false;
   // if (isAdminLoading) {
   //   return <p>loading......</p>;
@@ -58,7 +58,7 @@ const DashboardNav = () => {
       ) : (
         <ul className="">
           <div>
-            <Link to="/dashboard">
+            <Link to="/dashboard/user">
               <li className="hover:bg-gray py-2 font-semibold flex items-center  gap-2 pl-6">
                 <TiHomeOutline size={24} />
                 User Dashboard
@@ -72,28 +72,6 @@ const DashboardNav = () => {
           <li className="hover:bg-gray py-2 font-semibold flex items-center  gap-2 pl-6">
             <AiFillAmazonSquare size={24} />
             Cart
-          </li>
-          <div>
-            <Link to="/dashboard/products">
-              <li className="hover:bg-gray py-2 font-semibold flex items-center  gap-2 pl-6">
-                <AiOutlineProduct />
-                Ship
-              </li>
-            </Link>
-          </div>
-          <div>
-            <Link to="/dashboard/addproduct">
-              <li className="hover:bg-gray py-2 font-semibold flex items-center  gap-2 pl-6">
-                <IoBagAddOutline />
-                My Log
-              </li>
-            </Link>
-          </div>
-          <li className=" py-2 font-semibold flex items-center  gap-2 pl-6">
-            error
-          </li>
-          <li className=" py-2 font-semibold flex items-center  gap-2 pl-6">
-            Maps
           </li>
         </ul>
       )}

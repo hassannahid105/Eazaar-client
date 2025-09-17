@@ -15,7 +15,6 @@ const UpdateProduct = () => {
   const { product, isLoading } = useProduct(id);
   const axiosSecure = useAxiosSecure();
 
-  console.table(product);
   const {
     name,
     description,
@@ -50,7 +49,6 @@ const UpdateProduct = () => {
 
   const onSubmit = async (data) => {
     // ?  image upload image bb
-
     for (let i = 0; i < images.length; i++) {
       const formData = { image: images[0]?.file };
       const response = await axios.post(
@@ -62,7 +60,6 @@ const UpdateProduct = () => {
           },
         }
       );
-      console.log(response);
       if (response.status) {
         uploadedImageUrls.push(response.data.data.display_url);
       }
@@ -120,7 +117,9 @@ const UpdateProduct = () => {
 
           <div className=" flex items-center justify-center gap-4">
             <div className="flex items-center justify-center border-2 border-gray-200 px-4 py-2 rounded-full">
-              <MdOutlineRestorePage size={24} />
+              <span>
+                <MdOutlineRestorePage size={24} />
+              </span>
               <span>save Draf</span>
             </div>
             <button
